@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffeechy Menu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.wallpapic.com/i4095-027-131/medium/dokular-kahverengi-oruntu-tasarim-duvar-kagidi.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #3d3d3d;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Beyaz arka plan, yarı saydam */
+            border-radius: 8px;
+            margin: 20px;
+        }
+
+        /* Diğer stil kuralları buraya eklenebilir */
+
+        /* Logo için stil */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            color: #D2B48C; /* Açık kahve renk */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Hafif gölgeli bir efekt ekler */
+        }
+
+        .menu-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .menu-button {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            background-color: #8B4513; /* Kahverengi renk */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-button:hover {
+            background-color: #DAA520; /* Daha koyu sarı tonu */
+        }
+
+        .menu-category {
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .item-name {
+            font-weight: bold;
+            color: #3d3d3d;
+        }
+
+        .item-description {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .item-price {
+            font-style: italic;
+            color: #8b4513; /* Kahverengi tonu */
+        }
+
+        /* Label Stilleri */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            background-color: #8b4513; /* Kahve rengi */
+            color: #fff; /* Beyaz yazı */
+            padding: 8px;
+            border-radius: 5px;
+            font-weight: bold; /* Kalın yazı */
+        }
+
+        /* Mobil Ekranlar İçin Stil */
+        @media only screen and (max-width: 600px) {
+            .menu-button {
+                margin-bottom: 10px;
+            }
+
+            .menu-item {
+                padding: 10px;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo Ekranı
+    <div class="logo-container">
+        <div class="logo">Coffeechy</div>
+    </div> -->
+
+    <h1>Coffeechy Menu</h1>
+
+    <!-- Kategori Düğmeleri -->
+    <div class="menu-buttons">
+        <button class="menu-button" onclick="showCategory('kahve')">Kahve</button>
+        <button class="menu-button" onclick="showCategory('cay')">Çay</button>
+    </div>
+
+    <!-- Kahve Menüsü -->
+    <div class="menu-category" id="kahveMenu">
+        <h2 style="color: #D2B48C;">Kahve</h2>
+
+        <!-- Label Eklemeleri -->
+        <label for="espresso">Espresso</label>
+        <div class="menu-item">
+            <div class="item-name">Espresso</div>
+            <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div>
+            <div class="item-price">$2.50</div>
+        </div>
+
+        <label for="cappuccino">Cappuccino</label>
+        <div class="menu-item">
+            <div class="item-name">Cappuccino</div>
+            <div class="item-description">A coffee drink that is composed of a double espresso and steamed milk, with the surface topped with foamed milk.</div>
+            <div class="item-price">$3.50</div>
+        </div>
+
+        <label for="latte">Latte</label>
+        <div class="menu-item">
+            <div class="item-name">Latte</div>
+            <div class="item-description">A coffee drink made with espresso and steamed milk.</div>
+            <div class="item-price">$4.00</div>
+        </div>
+
+        <label for="mocha">Mocha</label>
+        <div class="menu-item">
+            <div class="item-name">Mocha</div>
+            <div class="item-description">A chocolate-flavored variant of a latte, with espresso, steamed milk, and chocolate syrup.</div>
+            <div class="item-price">$4.50</div>
+        </div>
+    </div>
+
+    <!-- Çay Menüsü -->
+    <div class="menu-category" id="cayMenu" style="display: none;">
+        <h2 style="color: #D2B48C;">Çay</h2>
+
+        <!-- Label Eklemeleri -->
+        <label for="earlGrey">Earl Grey</label>
+        <div class="menu-item">
+            <div class="item-name">Earl Grey</div>
+            <div class="item-description">Black tea flavored with oil of bergamot.</div>
+            <div class="item-price">$2.00</div>
+        </div>
+
+        <label for="chamomile">Chamomile</label>
+        <div class="menu-item">
+            <div class="item-name">Chamomile</div>
+            <div class="item-description">A herbal tea made from dried chamomile flowers.</div>
+            <div class="item-price">$2.00</div>
+        </div>
+
+        <label for="greenTea">Green Tea</label>
+        <div class="menu-item">
+            <div class="item-name">Green Tea</div>
+            <div class="item-description">A type of tea that is made from Camellia sinensis leaves and buds.</div>
+            <div class="item-price">$2.50</div>
+        </div>
+
+        <label for="peppermint">Peppermint</label>
+        <div class="menu-item">
+            <div class="item-name">Peppermint</div>
+            <div class="item-description">A tea made from the dried leaves of the peppermint plant.</div>
+            <div class="item-price">$2.50</div>
+        </div>
+    </div>
+
+    <script>
+        function showCategory(category) {
+            if (category === 'kahve') {
+                document.getElementById('kahveMenu').style.display = 'block';
+                document.getElementById('cayMenu').style.display = 'none';
+            } else if (category === 'cay') {
+                document.getElementById('kahveMenu').style.display = 'none';
+                document.getElementById('cayMenu').style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
