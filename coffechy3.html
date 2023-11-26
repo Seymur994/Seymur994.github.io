@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoffeeChy Menu</title>
+    <title>Coffeechy Menu</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #acb78e; /* Batığlık rengi */
+            background-color: #9ba77a; /* Batığlık rengi */
         }
 
         h1 {
@@ -29,21 +29,31 @@
             margin-bottom: 20px;
         }
 
-        .logo {
-            font-size: 48px;
-            font-weight: bold;
-            color: #6e4510; /* Açık kahve renk */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Hafif gölgeli bir efekt ekler */
+        .logo img {
+            width: 10%; /* Adjust the width as needed */
+            height: auto; /* Maintain the aspect ratio */
+            transform: translate(-50%, -50%);
+            position: fixed;
+            z-index: 0;
+            top: 10px;
+            left: 50%;
+            margin-top: 50PX;
         }
 
         .menu-buttons {
             text-align: center;
-            margin-bottom: 20px;
+            position: fixed;
+            top: 70px; /* Adjust the top position as needed */
+            width: 100%;
+            background-color: transparent; /* Adjust background color as needed */
+            z-index: 0;
+            margin-top: 60px;
+            margin-bottom: 15px;
         }
 
         .menu-button {
             display: inline-block;
-            margin: 0 10px;
+            margin: 10px 10px;
             padding: 10px 20px;
             font-size: 16px;
             font-weight: bold;
@@ -61,7 +71,8 @@
         }
 
         .menu-category {
-            margin-bottom: 20px;
+            margin-top: 150px; /* Adjust the margin as needed */
+            z-index: 2;
         }
 
         .menu-item {
@@ -70,6 +81,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
+            z-index: 2;
         }
 
         .item-name {
@@ -117,7 +129,9 @@
 
     <!-- Logo Ekranı -->
     <div class="logo-container">
-        <div class="logo">Coffeechy MENU</div>
+        <div class="logo">
+            <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/IMG_20231126_145350_477.png?raw=true" alt="Coffeechy Logo">
+        </div>
     </div>
 
     <!-- <h1>Coffeechy Menu</h1> -->
