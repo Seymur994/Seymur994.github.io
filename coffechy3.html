@@ -9,7 +9,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #9ba77a; /* Batığlık rengi */
+            background-color: #acb78e; /* Batığlık rengi */
         }
 
         h1 {
@@ -27,33 +27,41 @@
         .logo-container {
             text-align: center;
             margin-bottom: 20px;
+            position: fixed;
+            background-color:#acb78e ;
+            z-index: -1;
+            width: 100%;
+            
+
         }
 
         .logo img {
-            width: 50%; /* Adjust the width as needed */
+            width: 25%; /* Adjust the width as needed */
             height: auto; /* Maintain the aspect ratio */
             transform: translate(-50%, -50%);
             position: fixed;
-            z-index: 0;
             top: 10px;
             left: 50%;
-            margin-top: 50PX;
+            margin-top: 140px;
+            z-index: -1;
         }
 
         .menu-buttons {
             text-align: center;
             position: fixed;
-            top: 70px; /* Adjust the top position as needed */
+            top: 0px; /* Adjust the top position as needed */
             width: 100%;
-            background-color: transparent; /* Adjust background color as needed */
-            z-index: 0;
-            margin-top: 60px;
-            margin-bottom: 15px;
+            height: 240px;
+            background-color: #acb78e; /* Adjust background color as needed */
+            z-index: 1;
+            padding-top: 70px;
+            padding-bottom: 60px;
+            margin-bottom: 100px;
         }
 
         .menu-button {
             display: inline-block;
-            margin: 10px 10px;
+            margin: 0 10px;
             padding: 10px 20px;
             font-size: 16px;
             font-weight: bold;
@@ -64,6 +72,8 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            margin-top: 250px;
+            z-index: 5;
         }
 
         .menu-button:hover {
@@ -71,8 +81,7 @@
         }
 
         .menu-category {
-            margin-top: 150px; /* Adjust the margin as needed */
-            z-index: 2;
+            margin-top: 400px; /* Adjust the margin as needed */
         }
 
         .menu-item {
@@ -81,7 +90,6 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
-            z-index: 2;
         }
 
         .item-name {
@@ -116,6 +124,7 @@
         @media only screen and (max-width: 600px) {
             .menu-button {
                 margin-bottom: 10px;
+                margin-top: 180px;
             }
 
             .menu-item {
@@ -123,21 +132,31 @@
                 margin-bottom: 15px;
             }
         }
+        .logo{
+            width: 40%;
+        }
+        .menu-buttons{
+            height: 180px;
+        }
+        .menu-category{
+            margin-top: 320px;
+        }
     </style>
 </head>
 <body>
 
     <!-- Logo Ekranı -->
-    <div class="logo-container">
-        <div class="logo">
-            <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/IMG_20231126_145350_477.png?raw=true" alt="Coffeechy Logo">
-        </div>
-    </div>
+  
 
     <!-- <h1>Coffeechy Menu</h1> -->
 
     <!-- Kategori Düğmeleri -->
     <div class="menu-buttons">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image.png?raw=true" alt="Coffeechy Logo">
+            </div>
+        </div>
         <button class="menu-button" onclick="showCategory('kahve')">Kahve</button>
         <button class="menu-button" onclick="showCategory('cay')">Çay</button>
     </div>
