@@ -119,6 +119,13 @@
             border-radius: 5px;
             font-weight: bold; /* Kalın yazı */
         }
+        #cay_button{
+            background-color: darkgreen;
+        }
+        #menu_item{
+            background-color: darkgreen;
+            
+        }
 
         /* Mobil Ekranlar İçin Stil */
         @media only screen and (max-width: 600px) {
@@ -158,8 +165,8 @@
                 <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image.png?raw=true" alt="Coffeechy Logo">
             </div>
         </div>
-        <button class="menu-button" onclick="showCategory('kahve')">Kahve</button>
-        <button class="menu-button" onclick="showCategory('cay')">Çay</button>
+        <button class="menu-button" id="kofe_button" onclick="showCategory('kahve')">Kahve</button>
+        <button class="menu-button" id="cay_button" onclick="showCategory('cay')">Çay</button>
     </div>
 
     <!-- Kahve Menüsü -->
@@ -198,32 +205,32 @@
 
     <!-- Çay Menüsü -->
     <div class="menu-category" id="cayMenu" style="display: none;">
-        <h2 style="color: #9b6115;">Çay</h2>
+        <h2 style="color: darkgreen;">Çay</h2>
 
         <!-- Label Eklemeleri -->
-        <label for="earlGrey">Earl Grey</label>
-        <div class="menu-item">
+        <label for="earlGrey" id="menu_item" >Earl Grey</label>
+        <div class="menu-item" >
             <div class="item-name">Earl Grey</div>
             <div class="item-description">Black tea flavored with oil of bergamot.</div>
             <div class="item-price">$2.00</div>
         </div>
 
-        <label for="chamomile">Chamomile</label>
-        <div class="menu-item">
+        <label for="chamomile" id="menu_item">Chamomile</label>
+        <div class="menu-item" >
             <div class="item-name">Chamomile</div>
             <div class="item-description">A herbal tea made from dried chamomile flowers.</div>
             <div class="item-price">$2.00</div>
         </div>
 
-        <label for="greenTea">Green Tea</label>
-        <div class="menu-item">
+        <label for="greenTea" id="menu_item">Green Tea</label>
+        <div class="menu-item" >
             <div class="item-name">Green Tea</div>
             <div class="item-description">A type of tea that is made from Camellia sinensis leaves and buds.</div>
             <div class="item-price">$2.50</div>
         </div>
 
-        <label for="peppermint">Peppermint</label>
-        <div class="menu-item">
+        <label for="peppermint" id="menu_item">Peppermint</label>
+        <div class="menu-item" >
             <div class="item-name">Peppermint</div>
             <div class="item-description">A tea made from the dried leaves of the peppermint plant.</div>
             <div class="item-price">$2.50</div>
@@ -235,9 +242,17 @@
             if (category === 'kahve') {
                 document.getElementById('kahveMenu').style.display = 'block';
                 document.getElementById('cayMenu').style.display = 'none';
+                window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
             } else if (category === 'cay') {
                 document.getElementById('kahveMenu').style.display = 'none';
                 document.getElementById('cayMenu').style.display = 'block';
+                window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
             }
         }
     </script>
