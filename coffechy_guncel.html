@@ -9,9 +9,9 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-           
-          background-color: green;
-           
+            background-color: black; /* Batığlık rengi */
+            
+            
         }
         
         h1 {
@@ -38,10 +38,8 @@
         }
         .footer{
             text-decoration: none;
-            background-color: transparent;
-            font-size: 10px;
-            width: 100%;
             
+            font-size: 10px;
         }
         .footer li{
           margin-left: 10px;
@@ -50,15 +48,13 @@
         .footer p{
             margin-left: 10px;
         }
-        li{
-            list-style-type:none;
-        }
+
         .logo img {
-            width: 22%; /* Adjust the width as needed */
+            width: 25%; /* Adjust the width as needed */
             height: auto; /* Maintain the aspect ratio */
             transform: translate(-50%, -50%);
             position: fixed;
-            top: 35px;
+            top: 10px;
             left: 50%;
             margin-top: 140px;
             z-index: -1;
@@ -72,18 +68,17 @@
             height: 400px;
             background: white;
             z-index: 1;
-            background-repeat: round;
-            background-image: url("https://www.teahub.io/photos/full/218-2185249_show-laser.jpg");
-  /* Настройка анимации: название, продолжительность и тип анимации (linear для равномерного изменения) */
-  animation: changeBackground 4s linear infinite; /* Изменение фона каждые 4 секунды */
+          
 
             padding-top: 70px;
             padding-bottom: 60px;
             margin-bottom: 100px;
             display: flex;
             flex-wrap: wrap;
-           
-           
+            background-image: url("https://www.teahub.io/photos/full/218-2185249_show-laser.jpg");
+  /* Настройка анимации: название, продолжительность и тип анимации (linear для равномерного изменения) */
+        animation: changeBackground 5s linear infinite; /* Изменение фона каждые 4 секунды */
+           background-size: 100%;
         }
         @keyframes changeBackground {
   0% {
@@ -96,11 +91,11 @@
   }
   66% {
     /* Третий кадр анимации: фон через 2/3 времени анимации */
-    background-image: url('https://www.teahub.io/photos/full/198-1986327_rave-party-lights-rave-background.jpg');
+    background-image: url('https://e0.pxfuel.com/wallpapers/823/1019/desktop-wallpaper-rock-music-dark-rock.jpg');
   }
   100% {
     /* Четвертый кадр анимации: конечный фон */
-    background-image: url('https://www.teahub.io/photos/full/218-2185249_show-laser.jpg');
+    background-image: url('https://images.unsplash.com/photo-1495651779359-881fde1808a6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJvY2slMjBtdXNpY3xlbnwwfHwwfHx8MA%3D%3D');
   }
 }
 
@@ -112,7 +107,7 @@
             font-weight: bold;
             text-decoration: none;
             color: white;
-            background-color: rgb(0, 100, 0); /* Batığlık rengi */
+            background-color: darkgreen; /* Batığlık rengi */
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -130,7 +125,6 @@
 
         .menu-category {
             margin-top: 400px; /* Adjust the margin as needed */
-            background-color: transparent;
         }
 
         .menu-item {
@@ -160,7 +154,6 @@
             color: black; /* Kahverengi tonu */
             display: flex;
             font-weight: bold;
-           
         }
 
         /* Label Stilleri */
@@ -197,7 +190,6 @@
         .item-price p{
             font-weight: bold;
             margin-left: 5px;
-            font-size: 20px;
         }
         /* Mobil Ekranlar İçin Stil */
         @media only screen and (max-width: 600px) {
@@ -208,14 +200,11 @@
             .btns{
                 margin-top: 80px;
             }
-            .espresso{
-                text-align: center;
-            }
+
             .menu-item {
                 padding: 10px;
                 margin-bottom: 15px;
                 flex-direction: column;
-                background-color: transparent green;
             }
             .buttonfoot{
                 max-width: 100%;
@@ -235,28 +224,7 @@
         }
         .menu-category{
             margin-top: 259px;
-            background-image: url("https://wallpapers.com/images/hd/rock-and-roll-background-d9exsdp836ir4vqz.jpg");
-      
         }
-        @keyframes changeBackground {
-  0% {
-    /* Первый кадр анимации: начальный фон */
-    background-image: url('https://wallpapers.com/images/hd/rock-and-roll-background-d9exsdp836ir4vqz.jpg');
-  }
-  33% {
-    /* Второй кадр анимации: фон через 1/3 времени анимации */
-    background-image: url('https://wallpapers.com/images/hd/rock-and-roll-background-d9exsdp836ir4vqz.jpg');
-  }
-  66% {
-    /* Третий кадр анимации: фон через 2/3 времени анимации */
-    background-image: url('https://pbs.twimg.com/media/CoXbZ7RW8AEGQ0W.jpg:large');
-  }
-  100% {
-    /* Четвертый кадр анимации: конечный фон */
-    background-image: url('https://pbs.twimg.com/media/CoXbZ7RW8AEGQ0W.jpg:large');
-  }
-}
-        
         .buttonfoot {
     display: inline-block;
     text-align: center;
@@ -304,35 +272,58 @@
     position: relative;
     top: 0px;
     left: 0px;
-    background: url("https://files.ekmcdn.com/96911f/images/awakenings-festival-global-techno-events-live-dj-sets-special-compilation-2001-2023--media-discs-usb-drives-digital-delivery-options-64gb-portable-usb-drive-(3)-8211-p.jpg?v=00E7F3FF-C5B4-459A-AAE3-34C389408C93");
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEjElEQVRIiYWVW2xUZRSFv//0dOb0DJ122g7iTEuhnbbQgmAJhiImYkkw0SghlcQE0AfEB0PEBGLAC4lBG42ExMQEhGggWIGYGjEgxNQmIteUa8sUS1ugdLC36W069zPn+DBt6bTTuh733llr/yt7718wDQL9HgwMF4gqoBJYBOSMpnsAN1AHxs9AqyUrNymPSBYc8XoKhKAaWA/I0zUxCg2oNQx2zcp2ts8oYBhNBAZsG4FvAev/EE/GMPCeOhQ5JubPnyowSr4D+BKQElrUNG433aXtfgemVJmFC4pwFeQjSQllADrwoWrzfy1EcaKAv9+zETgykTwUCnP67J/8duYP7rYkvn5BcSE7t2+lrLQkmcgmS5azZlxg1PMbTLBF13V27PocPeDlk61rcbd38cOvV3C3d40zqarCgW++oNhVkMQuY4klK/eB8PV1IkniBLBhYsW1G418vKeamurNWC3KePxOWxfN97uw22Yx7A9xsWWYr/buniwAcJyYeFOWJFzEpyUBTe4WVi8vwmpRMAyDcCgIQKHDSqHDillRiGo6P507SSQaxZSaOpliPSm6Sxqd8ymjqGkaTnsGAEIIzGYlbqgAk1lBCAlTqkxRXhZaVEv2AhOIKpn4Ek1Bfp6TrhYP4UAQ/9AwQoA1OwvdMOjp6ETXdTKys3imJB+TaUr3Y6iUiG/oFCxftgRFidtzseVf+iPxV/V0dOKXzFx/NARCsKqiHFmedhdLZZ6sfwIyMtJZ89ILKLqX8tJ52NJVzIoJIQSO2TbS0sxYrOmk256ejhxg9pRNmYjuoQhaTMdhzyRNMQEgJIk0xYTDnklUi9HmGZiJAon44UqKh90j/Hi6AQBfIIymxcjOzcUfjABw+JfLdA2GZ+LvkYlfRUey7NxcB59VX6aje4BoNIbNqqLrBkMjQcwmmXOX7vLqhk0zCbhloA5YkyxbXFzI4tJiGu89pqb6Le7cbEMSgpLF86na+T3Ll5aRPzdvJoE64e/3uIBmpjnLHY0X2f/dcbzDIXyBEJIQKOZUnDnpvL9lA86yiunINWChrAu9VTKkWiadijGoisy2qgquujs5f+sBAnhxWQHlJQ7MppSZuq8V0CoA/P2eAnhy7ILBELduN3LhcgPWUB9rKlxJGeqvtOOVbaxcsYxnlyxGVdWx1JNjNxbpfdSyufbU70fOX7jC9ZtNjPgDACzNtPH2G89TVJaLmPA9PWzt5nDNX1zzegGwqGmUL13EqpXPUbXulU32vOJjMMH3+jO1Rw8eOlnoHfR9ahjGOFFYi1F36jo3Lt0j56kMhCTo7/XR1zWEPxwZr/MHgvx9qYHm5n/2ZquBY2PxhC/z5KE97Dt4ZmvvwPB+TYupAHaTmRW27KQWXR3spzscAkCWU0J2m/WD3e+uO/D6Ox+N1yT99NdWrl7wuNu7z+cPvWzourQqy07mpHMciMWo9/aAEPos1XzWOSdn57m6evdkrqRj0Hb/Qd+e7VtqBod9tZoWGxzRY6lzlLQcDEMGEHJKqC0SaDDM8tF5ztnbXqus2H/w6PHeZFz/AcxFs/YMith1AAAAAElFTkSuQmCC") no-repeat left center transparent;
     background-size: 100% 100%;
 }
-body{
-    text-decoration: none;
+
+.menu-category{
+            margin-top: 259px;
+            background-image: url("https://wallpapers.com/images/hd/rock-and-roll-background-d9exsdp836ir4vqz.jpg");
+      
+        }
+        @keyframes changeBackground {
+  0% {
+    /* Первый кадр анимации: начальный фон */
+    background-image: url('https://wallpapers.com/images/hd/rock-and-roll-background-d9exsdp836ir4vqz.jpg');
+  }
+  33% {
+    /* Второй кадр анимации: фон через 1/3 времени анимации */
+    background-image: url('https://cache.desktopnexus.com/thumbseg/376/376286-bigthumbnail.jpg');
+  }
+  66% {
+    /* Третий кадр анимации: фон через 2/3 времени анимации */
+    background-image: url('https://pbs.twimg.com/media/CoXbZ7RW8AEGQ0W.jpg:large');
+  }
+  100% {
+    /* Четвертый кадр анимации: конечный фон */
+    background-image: url('https://images.unsplash.com/photo-1495651779359-881fde1808a6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJvY2slMjBtdXNpY3xlbnwwfHwwfHx8MA%3D%3D');
+  }
 }
 @keyframes flame {
   0% {
-    color: white; /* Цвет пламени - светло-желтый */
+    color: green; /* Цвет пламени - светло-желтый */
   }
   50% {
-    color: rgb(181, 249, 181); /* Цвет пламени - оранжевый */
+    color: lightgreen; /* Цвет пламени - оранжевый */
   }
   100% {
-    color: lightgreen; /* Цвет пламени - светло-желтый */
+    color: darkgreen; /* Цвет пламени - светло-желтый */
   }
 }
-
 .fire-text {
   /* font-size: 24px; */
   font-weight: bold;
-  background: linear-gradient(-45deg, #ffedbc, #ff684e, #ffedbc);
+  background: linear-gradient(-45deg, green, lightgreen, darkgreen);
   background-size: 200% 200%;
   color: transparent;
   background-clip: text;
   animation: flame 2s infinite;
 }
-
-
+.foot {
+    text-decoration: none ;
+    list-style-type:none;
+    background-color: transparent;
+}
 
     </style>
 </head>
@@ -349,258 +340,623 @@ body{
         <div class="logo-container">
             <div class="logo">
                 <a href="https://www.instagram.com/coffeechy.az?igsh=OTBsajU2aXJ0M3h5"> <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image.png?raw=true" alt="Coffeechy Logo" ></a>
-                
+               
             </div>
         </div>
-        <!-- <div class="btns">
+        <div class="btns">
             <button class="menu-button" id="kofe_button" onclick="showCategory('kahve')">ESPRESSO BAR</button>
             <button class="menu-button" id="cay_button" onclick="showCategory('cay')" >SPECIAL HOT DRINKS</button>
             <button class="menu-button" id="HOT_DRINKS_button" onclick="showCategory('hot')" >TEA</button>
             <button class="menu-button" id="ICED_ESPRESSO_BAR_button" onclick="showCategory('ICED_ESPRESSO_BAR')" >ICED BAR</button>
-            <button class="menu-button" id="iced_soesial_drinks_button" onclick="showCategory('iced_soesial_drinks')" style="background-color: blue;">ICED SPECIAL DRINKS</button>
+            <!-- <button class="menu-button" id="iced_soesial_drinks_button" onclick="showCategory('iced_soesial_drinks')" style="background-color: blue;">ICED SPECIAL DRINKS</button> -->
             <button class="menu-button" id="LEMONADE_button" onclick="showCategory('LEMONADE')" >LEMONADE</button>
             
-            <button class="menu-button" id="MILKSHEYK" onclick="showCategory('MILKSHEYK') " style="background-color: rgb(229, 110, 110);">MILKSHAKE</button>
+            <!-- <button class="menu-button" id="MILKSHEYK" onclick="showCategory('MILKSHEYK') " style="background-color: rgb(229, 110, 110);">MILKSHAKE</button> -->
             <button class="menu-button" id="DESSERTS" onclick="showCategory('DESSERTS')" >DESSERTS</button>
             <button class="menu-button" id="FRAPE_button" onclick="showCategory('FRAPE')" >ƏLAVƏLƏR</button>
             
-        </div> -->
+        </div>
         
         </div>
 
     <!-- Kahve Menüsü -->
     <div class="menu-category" id="kahveMenu">
-        <h2 class="fire-text" style=" text-align: center;">PARTY MENU</h2>
+        <h2 class="fire-text">ESPRESSO BAR</h2>
 
         <!-- Label Eklemeleri -->
-        <label for="espresso">ROCK'N'ROLL COCKTAIL </label>
+        <label for="espresso">ESPRESSO DOUBLE</label>
         <div class="menu-item">
            
-           <div><div class="item-name"></div>
+           <div><div class="item-name">ESPRESSO Double</div>
             <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
-            <div class="item-price"> <p> 8.80 AZN</p></div></div>
+            <div class="item-price"> <p> 2.70 AZN</p></div></div>
             <div class="menu-item-img" >
                 <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
             </div>
             
-            
         </div>
-
-        <label for="espresso">PİNK PANTHER (Lemonade) </label>
+       
+        <label for="AMERICANO">AMERICANO</label>
         <div class="menu-item">
            
-           <div><div class="item-name"></div>
+           <div><div class="item-name">AMERICANO</div>
             <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
-            <div class="item-price"> <p> 6.90 AZN</p></div></div>
+            <div class="item-price"> <p>S -  3.50 AZN    </p> <p> </p>   <p class="p_m">   M -  4.00AZN</p>   <p class="p_l">  L -  4.50AZN</p> </div></div>
             <div class="menu-item-img" >
                 <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
             </div>
             
-            
         </div>
-         <!-- Label Eklemeleri -->
-         <label for="espresso">GREENLAND (Lemonade) </label>
-         <div class="menu-item">
-            
-            <div><div class="item-name"></div>
-             <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
-             <div class="item-price"> <p> 6.80 AZN</p></div></div>
-             <div class="menu-item-img" >
-                 <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
-             </div>
-             
-             
-         </div>
-        <!-- Label Eklemeleri -->
-        <label for="espresso">RASBERY SMOOTHIE </label>
-        <div class="menu-item">
-           
-           <div><div class="item-name"></div>
-            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
-            <div class="item-price"> <p> 8.50 AZN</p></div></div>
-            <div class="menu-item-img" >
-                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
-            </div>
-            
-            
-        </div>
-         <!-- Label Eklemeleri -->
-         <label for="espresso">CREAMY CAPPUCCİNO </label>
-         <div class="menu-item">
-            
-            <div><div class="item-name"></div>
-             <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
-             <div class="item-price"> <p> 6.50 AZN</p></div></div>
-             <div class="menu-item-img" >
-                 <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
-             </div>
-             
-             
-         </div>
-        <!-- Label Eklemeleri -->
-        <label for="espresso">HOT BUMBLEBEE </label>
-        <div class="menu-item">
-           
-           <div><div class="item-name"></div>
-            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
-            <div class="item-price"> <p> 6.60 AZN</p></div></div>
-            <div class="menu-item-img" >
-                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
-            </div>
-            
-            
-        </div>
-         <!-- Label Eklemeleri -->
-         <label for="espresso">POMEGRANATE AMERİCANO </label>
-         <div class="menu-item">
-            
-            <div><div class="item-name"></div>
-             <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
-             <div class="item-price"> <p> 8.50 AZN</p></div></div>
-             <div class="menu-item-img" >
-                 <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
-             </div>
-             
-             
-         </div>
-          <!-- Label Eklemeleri -->
-        <label for="espresso">AEROCANO </label>
-        <div class="menu-item">
-           
-           <div><div class="item-name"></div>
-            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
-            <div class="item-price"> <p> 6.20 AZN</p></div></div>
-            <div class="menu-item-img" >
-                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
-            </div>
-            
-            
-        </div>
-         <!-- Label Eklemeleri -->
-         <label for="espresso">CRAZY MOCHA </label>
-         <div class="menu-item">
-            
-            <div><div class="item-name"></div>
-             <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
-             <div class="item-price"> <p> 7.90 AZN</p></div></div>
-             <div class="menu-item-img" >
-                 <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
-             </div>
-             
-             
-         </div>
-          <!-- Label Eklemeleri -->
-        <label for="espresso">CARAMEL MACCHİATO </label>
-        <div class="menu-item">
-           
-           <div><div class="item-name"></div>
-            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
-            <div class="item-price"> <p> 7.50 AZN</p></div></div>
-            <div class="menu-item-img" >
-                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
-            </div>
-            
-            
-        </div>
-         <!-- Label Eklemeleri -->
-         <label for="espresso">İRİSH COFFEE (Non-Alcohol) </label>
-         <div class="menu-item">
-            
-            <div><div class="item-name"></div>
-             <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
-             <div class="item-price"> <p> 14.50 AZN</p></div></div>
-             <div class="menu-item-img" >
-                 <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
-             </div>
-             
-             
-         </div>
-         <!-- Label Eklemeleri -->
-         <label for="espresso">REDBULL COCTAIL </label>
-         <div class="menu-item">
-            
-            <div><div class="item-name"></div>
-             <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
-             <div class="item-price"> <p> 12.90 AZN</p></div></div>
-             <div class="menu-item-img" >
-                 <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
-             </div>
-             
-             
-         </div>
-         <label for="espresso">HOT/COLD CHOCOLATE </label>
-         <div class="menu-item">
-            
-            <div><div class="item-name"></div>
-             <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
-             <div class="item-price"> <p> 7.90 AZN</p></div></div>
-             <div class="menu-item-img" >
-                 <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
-             </div>
-             
-             
-         </div>
         
-         <label for="espresso">SANDWICH (TURKEY OR CHICKEN) </label>
-         <div class="menu-item">
+
+        <label for="CORTADO">CORTADO</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name">CORTADO</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>  2.90 AZN    </p>  <p class="p_m"></p>   <p class="p_l"></p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
             
-            <div><div class="item-name"></div>
-             <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
-             <div class="item-price"> <p> 5.90 AZN</p></div></div>
-             <div class="menu-item-img" >
-                 <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
-             </div>
-             
-             
-         </div>
-         <label for="espresso">SANDWICH  </label>
-         <div class="menu-item">
+        </div>
+        
+        <label for="PICCOLO">PICCOLO</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name">PICCOLO</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>  3.50 AZN    </p>  <p class="p_m"></p>   <p class="p_l"></p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
             
-            <div><div class="item-name"></div>
-             <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
-             <div class="item-price"> <p> 5.00 AZN</p></div></div>
-             <div class="menu-item-img" >
-                 <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
-             </div>
-             
-             
-         </div>
-         <label for="espresso">CAKE </label>
-         <div class="menu-item">
+        </div>
+        <label for="LATTE">LATTE</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name">LATTE</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>S -  4.30 AZN    </p> <p class="p_m">M -   5.00 AZN </p>   <p class="p_l"> L -   5.70  AZN</p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
             
-            <div><div class="item-name"></div>
-             <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
-             <div class="item-price"> <p> 6.00 AZN</p></div></div>
-             <div class="menu-item-img" >
-                 <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
-             </div>
-             
-             
-         </div>
-         <label for="espresso">KANAPE MIX </label>
-         <div class="menu-item">
+        </div>
+        <label for="LATTEMOCCHIATO">LATTE MACCHIATO</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name">LATTE MACCHIATO</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>S -  4.50 AZN    </p> <p class="p_m">M -   5.20 AZN </p>   <p class="p_l"> L -   5.90  AZN</p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
             
-            <div><div class="item-name"></div>
-             <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
-             <div class="item-price"> <p> 5.50 AZN</p></div></div>
-             <div class="menu-item-img" >
-                 <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
-             </div>
-             
-             
-         </div>
+        </div>
+        
+        <label for="CAPPUCINO">CAPPUCCINO</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name">CAPPUCCINO</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>S -  3.90 AZN    </p> <p class="p_m">M -   4.50 AZN </p>   <p class="p_l"> L -   5.00 AZN</p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+        <label for="FLATWHITE">FLAT WHITE</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name">FLAT WHITE</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>  3.90 AZN    </p> <p class="p_m"> </p>   <p class="p_l"> </p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
         
         
     </div>
-    <div class="foot" style="display: flex;"><li style="margin-left: 20px;"><a class="fire-text" style="text-decoration: none; background-color: transparent;" href="https://www.instagram.com/seymuragha?igsh=dHZkbGtldmZ5dDY5&utm_source=qr">&copy; BY SEYMUR AGHAYEV </a>  </li>
-    <li style="margin-left: 50px; "><a class="fire-text" href="">(055)430-19-99</a></li></div>
-    
+
+    <!-- SPECIAL HOT DRINKS Menüsü -->
+    <div class="menu-category" id="cayMenu" style="display: none;">
+        <h2 class="fire-text">SPECIAL HOT DRINKS</h2>
+        <label for="RAF" style="background-color: green;">RAF</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >RAF</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>S -  4.40 AZN    </p> <p class="p_m">M -   4.90 AZN </p>   <p class="p_l"> L -   5.50 AZN</p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
             
-            <!-- <div class="footer" style="background-color: green;">
-                <li><a style="text-decoration: none; background-color: transparent;" href="https://www.instagram.com/seymuragha?igsh=dHZkbGtldmZ5dDY5&utm_source=qr">&copy; BY SEYMUR AGHAYEV </a>  </li>
+        </div>
+
+        <label for="MOCHA" style="background-color: green;">MOCHA</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >MOCHA</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>S -   4.50 AZN    </p> <p class="p_m">M -   5.00 AZN </p>   <p class="p_l"> L -   5.50 AZN</p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+       
+            <label for="SPANISHLATTE" style="background-color: green;">SPANISH LATTE</label>
+            <div class="menu-item">
+               
+               <div><div class="item-name" >SPANISH LATTE</div>
+                <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                <div class="item-price"> <p>S -   5.80 AZN    </p> <p class="p_m">M -   6.30 AZN </p>   <p class="p_l"> L -   6.80 AZN</p> </div></div>
+                <div class="menu-item-img" >
+                    <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                </div>
+            </div>
+               
+                <label for="CHAITEALATTE" style="background-color: green;">CHAI TEA LATTE</label>
+                <div class="menu-item">
+                   
+                   <div><div class="item-name" >CHAI TEA LATTE</div>
+                    <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                    <div class="item-price"> <p>S -   4.50 AZN    </p> <p class="p_m">M -   5.00 AZN </p>   <p class="p_l"> L -   5.50 AZN</p> </div></div>
+                    <div class="menu-item-img" >
+                        <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                    </div>
+                </div>
+
+                <label for="HONNEYLATTE" style="background-color: green;">HONNEY LATTE</label>
+                <div class="menu-item">
+                   
+                   <div><div class="item-name" >HONNEY LATTE</div>
+                    <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                    <div class="item-price"> <p>S -   4.50 AZN    </p> <p class="p_m">M -   5.00 AZN </p>   <p class="p_l"> L -   5.50 AZN</p> </div></div>
+                    <div class="menu-item-img" >
+                        <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                    </div>
+                </div>
+
+                <label for="MATCHALATTE" style="background-color: green;">MATCHA </label>
+                <div class="menu-item">
+                   
+                   <div><div class="item-name" >MATCHA </div>
+                    <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                    <div class="item-price"> <p>S -   4.50 AZN    </p> <p class="p_m">M -   5.00 AZN </p>   <p class="p_l"> L -   4.50 AZN</p> </div></div>
+                    <div class="menu-item-img" >
+                        <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                    </div>
+                </div>
+                <label for="HOTCHOCOLATE" style="background-color: green;">HOT CHOCOLATE</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >HOT CHOCOLATE</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>  5.50 AZN    </p> <p class="p_m"> </p>   <p class="p_l"> </p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+        </div>
+         <!-- HOT DRINKS Menüsü -->
+    <div class="menu-category" id="hotDrinksMenu" style="display: none;">
+        <h2 class="fire-text">TEA</h2>
+        
+
+       
+        <label for="MEYVELICAY800ML" style="background-color: green;">FRUIT TEA CUP/800ML</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >FRUIT TEA CUP/800ML</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p> 3.50 AZN   </p> <p class="p_m">/   6.90 AZN </p>   <p class="p_l"></p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+        <label for="BITKICAYYS800ML" style="background-color: green;">GREEN TEA CUP/800ML</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >GREEN TEA CUP/800ML</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p> 3.00 AZN   </p> <p class="p_m">/   6.50 AZN </p>   <p class="p_l"></p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+        <label for="BITKICAYKRK800ML" style="background-color: green;">COFFEE CHERRY TEA (CUP)</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >COFFEE CHERRY TEA (CUP)</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p> 3.50 AZN   </p> <p class="p_m">    </p>   <p class="p_l"></p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+       
+    </div>
+    
+
+    </div>
+          <!-- ICEDE ESPRESSO BAR Menüsü -->
+    <div class="menu-category" id="icedespressobar" style="display: none;">
+        <h2 class="fire-text">ICED BAR</h2>
+        <label for="ICEAMERICANO" style="background-color: green;">ICE AMERICANO</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >ICE AMERICANO</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>   </p> <p class="p_m">   4.10 AZN </p>   <p class="p_l"> </p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+
+        <label for="ICELATTE" style="background-color: green;">ICE LATTE</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name">ICE LATTE</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>   </p> <p class="p_m" >   5.50 AZN </p>   <p class="p_l"> </p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+        <label for="ICERAF" style="background-color: green;">ICE RAF</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >ICE RAF</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>   </p> <p class="p_m" >   5.50 AZN </p>   <p class="p_l"> </p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+        <label for="ICECAPUCINO" style="background-color: green;">ICE CAPPUCCINO</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >ICE CAPPUCCINO</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>   </p> <p class="p_m">   5.00 AZN </p>   <p class="p_l"> </p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+        <label for="ESPRESSOsmuzi" style="background-color: green;">COFFEECHY SPECIAL SMOOTHIE</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >ESPRESSO SMUZI</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>   </p> <p class="p_m" >   9.80 AZN </p>   <p class="p_l"> </p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+        <label for="AFFOGATO" style="background-color: green;">AFFOGATO</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >AFFOGATO</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>   </p> <p class="p_m" >   4.70 AZN </p>   <p class="p_l"> </p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+
+        <label for="ICEMOCHA" style="background-color: darkgreen;">ICE MOCHA</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >ICE MOCHA</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>   </p> <p class="p_m" >   5.50 AZN </p>   <p class="p_l"> </p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+        
+        <label for="ICESPANISHLATTE" style="background-color: green;">ICE SPANISH LATTE</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >ICE SPANISH LATTE</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>   </p> <p class="p_m" >   6.50 AZN </p>   <p class="p_l"> </p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+        
+        
+        <label for="ICEMATCHALATTE" style="background-color: green;">ICE MATCHA LATTE</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >ICE MATCHA LATTE</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>   </p> <p class="p_m">   5.50 AZN </p>   <p class="p_l"> </p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+        <label for="ICECHAITEALATTE" style="background-color: green;">ICE CHAI TEA LATTE</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >ICE CHAI TEA LATTE</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>   </p> <p class="p_m" >   5.50 AZN </p>   <p class="p_l"> </p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+        <label for="ICECHAITEALATTE" style="background-color: green;">MILKSHEYK </label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >MILKSHEYK<p style="font-size: 16px;">(vanilla,chocolate,banana,strawberry,oreo)</p></div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>   </p> <p class="p_m" >   5.90 AZN </p>   <p class="p_l"> </p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+    </div>
+     
+        <!-- LEMONADE BAR Menüsü -->
+       <div class="menu-category" id="LEMONADE" style="display: none;">
+        <h2 class="fire-text">LEMONADE</h2>
+        <label for="LIMON" style="background-color: green;">LEMON</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >LEMON</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>   </p> <p class="p_m" >   4.20 AZN </p>   <p class="p_l"> </p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+        <label for="mangomix" style="background-color: green;">MANGO-MIX</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >MANGO-MIX</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>   </p> <p class="p_m" >   4.90 AZN </p>   <p class="p_l"> </p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+        <label for="BUBBLEGUM" style="background-color: green;">BUBBLE GUM</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name">BUBBLE GUM</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>   </p> <p class="p_m" >   5.50 AZN </p>   <p class="p_l"> </p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+        <label for="MAXITO" style="background-color: green;">MAXITO</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >MAXITO</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>   </p> <p class="p_m" >   5.50 AZN </p>   <p class="p_l"> </p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+
+        <label for="STRAWBERRYLM" style="background-color: green;">STRAWBERRY</label>
+        <div class="menu-item">
+           
+           <div><div class="item-name" >STRAWBERRY</div>
+            <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+            <div class="item-price"> <p>   </p> <p class="p_m" >   4.90 AZN </p>   <p class="p_l"> </p> </div></div>
+            <div class="menu-item-img" >
+                <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+            </div>
+            
+        </div>
+
+        
+       </div>
+       <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+         
+           <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+            <!-- DESSERTS BAR Menüsü -->
+            <div class="menu-category" id="DESSERTS_" style="display: none;">
+                <h2 class="fire-text">DESSERTS</h2>
+                <label for="SANSEBASTYAN" style="background-color: green;">SAN SEBASTIAN</label>
+                <div class="menu-item">
+                   
+                   <div><div class="item-name" >SAN SEBASTIAN </div>
+                    <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                    <div class="item-price"> <p>   </p> <p class="p_m" >   5.90 AZN </p>   <p class="p_l"> </p> </div></div>
+                    <div class="menu-item-img" >
+                        <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                    </div>
+                    
+                </div>
+                <label for="CLASSICCHESECAKE" style="background-color: green;"> CHEESECAKE</label>
+                <div class="menu-item">
+                   
+                   <div><div class="item-name" > CHEESECAKE </div>
+                    <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                    <div class="item-price"> <p>   </p> <p class="p_m">   5.00 AZN </p>   <p class="p_l"> </p> </div></div>
+                    <div class="menu-item-img" >
+                        <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                    </div>
+                    
+                </div>
+                <label for="BLACKFOREST" style="background-color: green;">BLACK FOREST</label>
+                <div class="menu-item">
+                   
+                   <div><div class="item-name">BLACK FOREST </div>
+                    <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                    <div class="item-price"> <p>   </p> <p class="p_m" >   5.00 AZN </p>   <p class="p_l"> </p> </div></div>
+                    <div class="menu-item-img" >
+                        <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                    </div>
+                    
+                </div>
+
+                
+
+                <label for="KRUOSANSHOKOLADLI" style="background-color: green;">KRUASSAN SADƏ</label>
+                <div class="menu-item">
+                   
+                   <div><div class="item-name" >KRUASSAN SADƏ</div>
+                    <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                    <div class="item-price"> <p>   </p> <p class="p_m">  3.40  AZN </p>   <p class="p_l"> </p> </div></div>
+                    <div class="menu-item-img" >
+                        <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                    </div>
+                    
+                </div>
+                <label for="KRUOSANKREMLI" style="background-color: green; flex-direction: column;" >KRUASSAN SADƏ (özün yarat*)</label>
+                <div class="menu-item">
+                   
+                   <div><div class="item-name" >KRUASSAN SADƏ (özün yarat*)</div>
+                    <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                    <div class="item-price"> <p>   </p> <p class="p_m" >   3,40 AZN </p>   <p class="p_l"> </p> </div></div>
+                    <div class="menu-item-img" >
+                        <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                    </div>
+                    <div><div class="item-name" >ŞOKOLAD</div>
+                    <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                    <div class="item-price"> <p>   </p> <p class="p_m" >   0.60 AZN </p>   <p class="p_l"> </p> </div></div>
+                    <div class="menu-item-img" >
+                        <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                    </div>
+                    <div><div class="item-name" >KREM ŞANTİ</div>
+                    <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                    <div class="item-price"> <p>   </p> <p class="p_m" >   0.60 AZN </p>   <p class="p_l"> </p> </div></div>
+                    <div class="menu-item-img" >
+                        <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                    </div>
+                    <div><div class="item-name" >CEM</div>
+                    <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                    <div class="item-price"> <p>   </p> <p class="p_m" >   0.60 AZN </p>   <p class="p_l"> </p> </div></div>
+                    <div class="menu-item-img" >
+                        <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                    </div>
+                    <div><div class="item-name" >ÇİYƏLƏK</div>
+                    <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                    <div class="item-price"> <p>   </p> <p class="p_m" >   0.60 AZN </p>   <p class="p_l"> </p> </div></div>
+                    <div class="menu-item-img" >
+                        <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                    </div>
+                    <div><div class="item-name" >KARAMEL</div>
+                    <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                    <div class="item-price"> <p>   </p> <p class="p_m" >   0.60 AZN </p>   <p class="p_l"> </p> </div></div>
+                    <div class="menu-item-img" >
+                        <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                    </div>
+                </div>
+            </div>
+                <!-- FRAPPE BAR Menüsü -->
+            <div class="menu-category" id="Frappe_" style="display: none;">
+            <h2 class="fire-text">ƏLAVƏLƏR</h2>
+            
+            <label for="VANILAFRAPPE" style="background-color: green;">SINGLE SHOT</label>
+            <div class="menu-item">
+               
+               <div><div class="item-name" >SINGLE SHOT</div>
+                <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                <div class="item-price"> <p>   </p> <p class="p_m" >   1.50 AZN </p>   <p class="p_l"> </p> </div></div>
+                <div class="menu-item-img" >
+                    <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                </div>
+                
+            </div>
+            <label for="VANILAFRAPPE" style="background-color: green;">SIROP</label>
+            <div class="menu-item">
+               
+               <div><div class="item-name" >SIROP</div>
+                <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                <div class="item-price"> <p>   </p> <p class="p_m" >   1.00 AZN </p>   <p class="p_l"> </p> </div></div>
+                <div class="menu-item-img" >
+                    <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                </div>
+                
+            </div>
+            <label for="VANILAFRAPPE" style="background-color: green;">KREM ŞANTİ</label>
+            <div class="menu-item">
+               
+               <div><div class="item-name" >KREM ŞANTİ</div>
+                <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                <div class="item-price"> <p>   </p> <p class="p_m" >   1.50 AZN </p>   <p class="p_l"> </p> </div></div>
+                <div class="menu-item-img" >
+                    <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                </div>
+                
+            </div>
+            <label for="VANILAFRAPPE" style="background-color: green;">DONDURMA (top)</label>
+            <div class="menu-item">
+               
+               <div><div class="item-name" >DONDURMA (top)</div>
+                <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                <div class="item-price"> <p>   </p> <p class="p_m" >   2.00 AZN </p>   <p class="p_l"> </p> </div></div>
+                <div class="menu-item-img" >
+                    <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                </div>
+                
+            </div>
+            <label for="VANILAFRAPPE" style="background-color: green;">MARSHMALLLOW</label>
+            <div class="menu-item">
+               
+               <div><div class="item-name" >MARSHMALLOW</div>
+                <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                <div class="item-price"> <p>   </p> <p class="p_m" >   1.00 AZN </p>   <p class="p_l"> </p> </div></div>
+                <div class="menu-item-img" >
+                    <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                </div>
+                
+            </div>
+            <label for="VANILAFRAPPE" style="background-color: green;">SÜD (50ML/200ML)</label>
+            <div class="menu-item">
+               
+               <div><div class="item-name" >SÜD (50ML/200ML)</div>
+                <!-- <div class="item-description">A strong black coffee made by forcing hot water through finely-ground coffee beans.</div> -->
+                <div class="item-price"> <p>1.00 AZN   </p> <p class="p_m" >/   2.50 AZN </p>   <p class="p_l"> </p> </div></div>
+                <div class="menu-item-img" >
+                    <!-- <img src="https://github.com/Seymur994/Seymur994.github.io/blob/cyber/zyro-image%20(1).png?raw=true" alt=""> -->
+                </div>
+                
+            </div>
+           
+          </div>
+         </div>
+            </div >
+            <div class="foot" style="display: flex;"><li style="margin-left: 20px;"><a class="fire-text" style="text-decoration: none; background-color: transparent;" href="https://www.instagram.com/seymuragha?igsh=dHZkbGtldmZ5dDY5&utm_source=qr">&copy; BY SEYMUR AGHAYEV </a>  </li>
+                <li style="margin-left: 50px; "><a class="fire-text" href="">(055)430-19-99</a></li></div>
+                
+                        
+            <!-- <div class="footer">
+                <li><a style="text-decoration: none;" href="https://www.instagram.com/seymuragha?igsh=dHZkbGtldmZ5dDY5&utm_source=qr">&copy; BY SEYMUR AGHAYEV </a>  </li>
                 <p>(055)430-19-99</p> 
                 </div> -->
-    <!-- <script>
+    <script>
         function showCategory(category) {
             if (category === 'kahve') {
                 document.getElementById('kahveMenu').style.display = 'block';
@@ -717,7 +1073,7 @@ body{
                 });
             }
         }
-     </script> -->
+    </script>
     
         
     
